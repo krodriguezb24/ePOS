@@ -6,7 +6,7 @@
         {
             "label": "Gulp Sass",
             "type": "shell",
-            "command": "gulp",
+            "command": "gulp watch",
             "group": "build"
         }
     ]
