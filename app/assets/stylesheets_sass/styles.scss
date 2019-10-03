@@ -11,6 +11,25 @@ $fa-font-path: "../../../node_modules/font-awesome/fonts";
     to { transform: none; }
 }
 
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 
 // Estilos
 body.all {
@@ -132,13 +151,12 @@ body.all {
 
 body.menu_body {
     width: 97%;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
     flex-wrap: wrap;
     overflow-y: hidden;
-    
+    transition: display 1000ms ease-in;
 
     .menu_short_item{
         width: 85%;
@@ -151,9 +169,28 @@ body.menu_body {
         border-radius: 50%;
         border: 1px solid white;
         color: $darkBlue;
+        
+    }  
+    
+    .menu_short_item:hover{
+        background-color: $darkBlue;
+        color: white;
+        border-block-color: $blue;
     }
 }
 
+.hide {
+    display: none !important;
+    transition: display 3s ease;
+    &.out{
+        animation: fade-out 5s;
+    }
+}
+
+.show > div{
+    display: flex !important;
+    animation: fade-in 3s;
+}
 
 .footer {
     background-color: $lightBlue;

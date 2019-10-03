@@ -2358,6 +2358,20 @@
   to {
     transform: none; } }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 body.all {
   margin: 0px;
   background-color: #1a4faa;
@@ -2458,12 +2472,12 @@ body.all {
 
 body.menu_body {
   width: 97%;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
   flex-wrap: wrap;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  transition: display 1000ms ease-in; }
 
 body.menu_body .menu_short_item {
   width: 85%;
@@ -2476,6 +2490,22 @@ body.menu_body .menu_short_item {
   border-radius: 50%;
   border: 1px solid white;
   color: #112f91; }
+
+body.menu_body .menu_short_item:hover {
+  background-color: #112f91;
+  color: white;
+  border-block-color: #1a4faa; }
+
+.hide {
+  display: none !important;
+  transition: display 3s ease; }
+
+.hide.out {
+  animation: fade-out 5s; }
+
+.show > div {
+  display: flex !important;
+  animation: fade-in 3s; }
 
 .footer {
   background-color: #70abe9;
