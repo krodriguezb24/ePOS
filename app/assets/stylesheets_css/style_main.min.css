@@ -2350,33 +2350,6 @@
 .tooltip:hover .tooltiptext {
   visibility: visible; }
 
-@keyframes latidos {
-  from {
-    transform: none; }
-  50% {
-    transform: scale(1.4); }
-  to {
-    transform: none; } }
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: scale(0); }
-  to {
-    opacity: 1;
-    transform: scale(1); } }
-
-@keyframes fade-out {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-
-body.all {
-  margin: 0px;
-  background-color: #1a4faa;
-  font-family: 'Nunito', sans-serif; }
-
 .header {
   width: 100%;
   height: 70px;
@@ -2428,47 +2401,19 @@ body.all {
 .header_body .header_content .header_content__link a:hover {
   text-decoration: underline; }
 
-.main404 {
-  background: linear-gradient(#112f91, #1a4faa, #70abe9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0px 30px;
-  min-height: calc(100vh - 130px); }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
 
-.main404 h2 {
-  font-size: 100px;
-  color: white;
-  margin: 0;
-  animation: latidos 1.3s infinite; }
-
-.main404 p {
-  font-size: 30px;
-  color: white;
-  text-align: center; }
-
-.inner_content {
-  background: linear-gradient(#112f91, #1a4faa, #70abe9);
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding: 0px .5em;
-  min-height: calc(100vh - 130px); }
-
-.inner_content div.menu {
-  flex: .5;
-  flex-basis: 1;
-  display: flex; }
-
-.inner_content div.menu .menu__object {
-  width: 100%;
-  margin: 0;
-  border: none; }
-
-.inner_content .main_content {
-  flex: 10;
-  flex-basis: 4; }
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 body.menu_body {
   width: 97%;
@@ -2551,6 +2496,114 @@ body.menu_body .menu_short_item:hover {
   padding-right: 30px;
   font-size: 0.9 em;
   color: #e6e6e6; }
+
+body.main_content_body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Nunito', sans-serif; }
+
+body.main_content_body .home_content_row {
+  height: 40%;
+  width: 95%;
+  margin: .5em;
+  display: flex;
+  justify-content: space-around; }
+
+body.main_content_body .home_content_row .home_content_column {
+  margin: .5em;
+  width: 30%;
+  border-radius: 1.5em;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+
+body.main_content_body .home_content_row .home_content_column .home_circle_icon {
+  width: 35%;
+  padding: 9% 0 9% 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+body.main_content_body .home_content_row .home_content_column .home_content_title {
+  color: #112f91; }
+
+body.main_content_body .home_content_row .home_content_column:hover {
+  transform: scale(1.05); }
+
+#home_content {
+  height: 100%; }
+
+.main404 {
+  background: linear-gradient(#112f91, #1a4faa, #70abe9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 130px); }
+
+.main404 h2 {
+  font-size: 100px;
+  color: white;
+  margin: 0;
+  animation: latidos 1.3s infinite; }
+
+.main404 p {
+  font-size: 30px;
+  color: white;
+  text-align: center; }
+
+@keyframes latidos {
+  from {
+    transform: none; }
+  50% {
+    transform: scale(1.4); }
+  to {
+    transform: none; } }
+
+body.all {
+  margin: 0px;
+  background-color: #1a4faa;
+  font-family: 'Nunito', sans-serif; }
+
+.inner_content {
+  background: linear-gradient(#112f91, #1a4faa, #70abe9);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0px .5em;
+  min-height: calc(100vh - 130px); }
+
+.inner_content div.menu {
+  flex: .5;
+  flex-basis: 1;
+  display: flex; }
+
+.inner_content div.menu .menu__object {
+  width: 100%;
+  margin: 0;
+  border: none; }
+
+.inner_content .main_content {
+  flex: 10;
+  flex-basis: 4;
+  display: flex; }
+
+.inner_content .main_content .main_content__object {
+  width: 100%;
+  margin: 0;
+  border: none; }
 
 @media only screen and (min-width: 1000px) {
   .header_content {
