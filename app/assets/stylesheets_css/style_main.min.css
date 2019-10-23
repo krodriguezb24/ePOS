@@ -2375,6 +2375,23 @@
   background-color: rgba(255, 255, 255, 0.2);
   transition: 90ms; }
 
+.button_item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  height: 3em;
+  letter-spacing: 1px;
+  margin: 10px 0px; }
+
+.button_item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 90ms; }
+
 .button-cart {
   background-color: white;
   border: 2px solid #293462;
@@ -2936,13 +2953,18 @@ body.main_content_body .home_content_row .home_content_column:hover {
 #shipment_content {
   height: 100%; }
 
+.top_buttons {
+  height: 7%;
+  padding-left: 1em; }
+
 .cart {
-  height: 95% !important;
+  height: 90%;
   display: flex;
   position: absolute; }
 
 .cart .cart__products {
   width: 65%;
+  margin-top: .5em;
   overflow-y: auto !important; }
 
 .cart .cart__products .cart__product_item {
@@ -2983,7 +3005,9 @@ body.main_content_body .home_content_row .home_content_column:hover {
   width: 35%;
   margin-left: 1em;
   border: 1px solid white;
-  border-radius: 10px; }
+  border-radius: 10px;
+  height: 95%;
+  margin-top: 1em; }
 
 .cart .cart__items .cart__items_title {
   text-align: center;
@@ -2996,7 +3020,7 @@ body.main_content_body .home_content_row .home_content_column:hover {
 
 .cart .cart__items .cart__items_list {
   margin: 0 1em;
-  height: 73%;
+  height: 68%;
   overflow: auto; }
 
 .cart .cart__items .cart__items_list .cart__items_list-product {
@@ -3016,11 +3040,21 @@ body.main_content_body .home_content_row .home_content_column:hover {
 
 .cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-description {
   width: 70%;
-  text-align: center; }
+  text-align: center;
+  display: flex; }
 
-.cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-description h4 {
+.cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-description .cart__items_list-secc1 h4 {
   margin: 0;
   margin-left: 1em; }
+
+.cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-description .cart__items_list-secc1 .cart__items_list-buttons {
+  margin-top: .5em; }
+
+.cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-description .cart__items_list-secc2 {
+  margin-top: 1.8em;
+  margin-left: 1.5em;
+  text-align: left;
+  font-size: 14px; }
 
 .cart .cart__items .cart__items_list .cart__items_list-product .cart__items_list-delete {
   width: 10%;

@@ -5,14 +5,19 @@
 #shipment_content{
     height: 100%;
 }
+.top_buttons{
+    height: 7%;
+    padding-left: 1em;
+}
 
 .cart{
-    height: 95% !important;
+    height: 90%;
     display:flex;
     position:absolute;
 
     .cart__products{
         width: 65%;
+        margin-top: .5em;
         overflow-y: auto !important;
         
 
@@ -64,6 +69,10 @@
         margin-left: 1em;
         border: 1px solid white;
         border-radius: 10px;
+        height: 95%;
+        margin-top: 1em;
+
+
 
         .cart__items_title{
             text-align: center;
@@ -78,7 +87,7 @@
 
         .cart__items_list{
             margin: 0 1em;
-            height: 73%;
+            height: 68%;
             overflow: auto;
 
             .cart__items_list-product{
@@ -101,10 +110,24 @@
                 .cart__items_list-description{
                     width: 70%;
                     text-align: center;
+                    display: flex;
 
-                    h4{
-                        margin: 0;
-                        margin-left: 1em;
+                    .cart__items_list-secc1{
+                        h4{
+                            margin: 0;
+                            margin-left: 1em;
+                        }
+
+                        .cart__items_list-buttons{
+                            margin-top: .5em;
+                        }
+                    }
+
+                    .cart__items_list-secc2{
+                        margin-top: 1.8em;
+                        margin-left: 1.5em;
+                        text-align: left;
+                        font-size: 14px;
                     }
                 }
 
