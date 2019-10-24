@@ -6,7 +6,10 @@ $fa-font-path: "../../../node_modules/font-awesome/fonts";
 @import "./header"; // Estilos para header
 @import "./menu"; // Estilos para menú
 @import "./footer"; // Estilos para footer
+@import "./login"; // Estilos para login
+@import "./register"; // Estilos para registro
 @import "./home"; // Estilos para home
+@import "./cart"; // Estilos para carrito de compras
 @import "./error"; // Estilos para error
 
 // Keyframes
@@ -22,6 +25,12 @@ body.all {
     background-color: $blue;
     font-family: 'Nunito', sans-serif;
 }
+
+.iframe_content_body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+  }
 
 .inner_content {
     background: linear-gradient($darkBlue, $blue, $lightBlue);
@@ -127,6 +136,12 @@ body.all {
         align-items: flex-start;
         flex-direction: column;
     }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
 }
 
 @media only screen and (max-width: 600px) {

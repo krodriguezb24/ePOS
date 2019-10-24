@@ -36,6 +36,7 @@ body.main_content_body{
                 justify-content: center;
                 align-items: center;
                 color: white;
+                font-size: 80px;
             }
             
             .home_content_title {
@@ -52,3 +53,42 @@ body.main_content_body{
 #home_content {
     height: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .home_circle_icon {
+        // background-color: rgba(255, 255, 255, 0.5);
+        width: 35%;
+        padding: 9% 0 9% 0;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        .fa{
+            font-size: 60px !important;
+        }
+  }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .home_circle_icon {
+        // background-color: rgba(255, 255, 255, 0.5);
+        width: 35%;
+        padding: 9% 0 9% 0;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        .fa{
+            font-size: 70px ;
+        }
+  }
+}
+
+  
